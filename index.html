@@ -42,18 +42,58 @@
     .hero-copy { max-width: 570px; font-size: 1.1rem; line-height: 1.65; }
     .eyebrow { color: var(--yellow); letter-spacing: .12em; text-transform: uppercase; font-weight: 700; font-size: .8rem; }
 
-    .social-links { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .social-links { display: flex; flex-wrap: wrap; gap: .65rem; }
     .social-links a {
       color: var(--ink);
       background: var(--yellow);
       border: 2px solid var(--ink);
       border-radius: 999px;
-      padding: .65rem 1.15rem;
+      padding: .75rem 1.15rem;
       text-decoration: none;
       font-weight: 700;
       transition: transform .2s ease, box-shadow .2s ease;
     }
     .social-links a:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
+    .social-links .rss-copy-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      padding: 0;
+      line-height: 1;
+    }
+    .rss-copy-link .rss-icon {
+      width: 22px;
+      height: 22px;
+      display: block;
+      fill: currentColor;
+    }
+    .rss-copy-link.copied {
+      background: #b9fbc0;
+      box-shadow: 4px 4px 0 var(--ink);
+    }
+    .copy-toast {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      background: var(--ink);
+      color: white;
+      border: 2px solid var(--yellow);
+      border-radius: 999px;
+      padding: .7rem 1rem;
+      font-weight: 700;
+      box-shadow: 0 10px 28px rgba(35, 28, 42, .18);
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: opacity .2s ease, transform .2s ease;
+      z-index: 1000;
+    }
+    .copy-toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
     .page-nav { background: var(--ink); }
     .page-nav a { color: white; text-decoration: none; font-weight: 700; }
     .page-nav a:hover { color: var(--yellow); }
@@ -67,6 +107,24 @@
     .schedule-item:last-child { border-bottom: 0; }
     .schedule-thumb { width: 76px; height: 52px; object-fit: cover; border: 2px solid var(--ink); }
     .schedule-date { color: var(--pink); font-weight: 700; text-transform: uppercase; font-size: .8rem; letter-spacing: .08em; }
+    .watch-now {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      font-family: 'Lilita One', sans-serif;
+      font-size: .95rem;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .watch-now a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: inherit;
+      text-decoration: none;
+    }
     .category-section { scroll-margin-top: 1rem; }
     .category-heading { display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; }
     .category-label { color: var(--pink); font: 1.15rem 'DM Sans', sans-serif; font-weight: 700; }
@@ -106,8 +164,19 @@
           <h1 class="mb-4">The Role Play Goblin</h1>
           <p class="hero-copy mb-4">Live-play tabletop roleplaying, immersive mysteries, and games made for people who like their stories tense, strange, and full of consequences.</p>
           <nav class="social-links" aria-label="Social links">
-            <a href="https://www.youtube.com/channel/UC_iLuOQkk2GVkgqkTtTSJYw" target="_blank" rel="noopener">Watch on YouTube</a>
-            <a href="https://www.instagram.com/theroleplaygoblin/" target="_blank" rel="noopener">Follow on Instagram</a>
+            <a href="https://www.youtube.com/channel/UC_iLuOQkk2GVkgqkTtTSJYw" target="_blank" rel="noopener">
+              <img src="images/youtube_icon.png" width="28" height="28" alt="Watch on YouTube"> Watch
+            </a>
+            <a href="https://www.instagram.com/theroleplaygoblin/" target="_blank" rel="noopener">
+              <img src="images/insta_icon.png" width="28" height="28" alt="Follow on Instagram"> Follow on Instagram
+            </a>
+            <a href="https://open.spotify.com/show/1xSlCPKiNIIGX0DpBIR5LS?si=1337a3807b0a43d3" target="_blank" rel="noopener">
+              <img src="images/spotify_icon.png" width="28" height="28" alt="Listen on Spotify"> Listen on Spotify
+            </a>
+            <a href="https://podcast.therpgoblin.co.uk/feed.xml" class="rss-copy-link" data-feed-url="https://podcast.therpgoblin.co.uk/feed.xml" aria-label="Copy RSS feed URL" title="Copy RSS feed URL">
+              <img src="images/rss_icon_2.png" width="35" height="35" alt="RSS feed icon">
+              <span class="visually-hidden">Copy RSS feed URL</span>
+            </a>
           </nav>
         </div>
       </div>
@@ -143,80 +212,109 @@
         <div class="schedule p-4 p-md-5">
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/vaesen/doubles_ep1_still.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-09-07">Monday 7 September</time></div>
-            <div class="col"><strong>Vaesen: Doubles, Episode 1</strong><br>Folkloric mysteries and strange encounters.</div>
+            <div class="col-md-3 schedule-date">
+              <div class="watch-now">
+                <a href="https://youtu.be/9Hrv9qN8XE8?si=QEjXTubyAr9FMvUW" target="_blank" rel="noopener noreferrer" aria-label="Watch episode 1 on YouTube">
+                  <img src="images/youtube_watch_icon.png" height="22" alt="Watch on YouTube">
+                </a>
+                <span>Watch Now</span>
+              </div>
+              <div>
+                <time datetime="2026-09-07">Monday 7 September</time>
+              </div>
+            </div>
+            <div class="col"><strong>Vaesen: Doubles, Episode 1</strong><br>Frederik is bitten by something ancient.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/vaesen/doubles_ep2_still.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-09-21">Monday 21 September</time></div>
-            <div class="col"><strong>Vaesen: Doubles, Episode 2</strong><br>Folkloric mysteries and strange encounters.</div>
+            <div class="col-md-3 schedule-date">
+              <div class="watch-now">
+                <a href="https://youtu.be/AnkgOGsz8a8?si=aFvEmVTHpzKaoLs2" target="_blank" rel="noopener noreferrer" aria-label="Watch episode 2 on YouTube">
+                  <img src="images/youtube_watch_icon.png" height="22" alt="Watch on YouTube">
+                </a>
+                <span>Watch Now</span>
+              </div>
+              <div>
+                <time datetime="2026-09-21">Monday 21 September</time>
+              </div>
+            </div>
+            <div class="col"><strong>Vaesen: Doubles, Episode 2</strong><br>Reflections and revelations.</div>
+          </div>
+          <div class="schedule-item row g-2 align-items-center">
+            <div class="col-auto"><img class="schedule-thumb" src="images/vaesen/doubles_ep3_still.png" alt=""></div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-10-05">Monday 5 October</time></div>
+            <div class="col"><strong>Vaesen: Doubles, Episode 3</strong><br>Frederik sees double under fireworks.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/vaesen/NeckIntroThumbnailEp1.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-10-05">Monday 5 October</time></div>
-            <div class="col"><strong>Vaesen: Dance With Death, Episode 1</strong><br>A new folkloric mystery begins.</div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-10-12">Monday 12 October</time></div>
+            <div class="col"><strong>Vaesen: Dance With Death, Episode 1</strong><br>The dance begins.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/vaesen/NeckIntroThumbnailEp2.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-10-12">Monday 12 October</time></div>
-            <div class="col"><strong>Vaesen: Dance With Death, Episode 2</strong><br>The mystery turns.</div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-10-19">Monday 19 October</time></div>
+            <div class="col"><strong>Vaesen: Dance With Death, Episode 2</strong><br>Fiddles and fear at the lake.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/vaesen/NeckIntroThumbnailEp3.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-10-19">Monday 19 October</time></div>
-            <div class="col"><strong>Vaesen: Dance With Death, Episode 3</strong><br>Dancing in the lake</div>
-          </div>
-          <div class="schedule-item row g-2 align-items-center">
-            <div class="col-auto"><img class="schedule-thumb" src="images/mothership/VRDeadEpisode1.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-11-02">Monday 2 November</time></div>
-            <div class="col"><strong>Mothership: VR Dead, Episode 1</strong><br>Cold corridors, bad decisions, and survival horror.</div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-10-26">Monday 26 October</time></div>
+            <div class="col"><strong>Vaesen: Dance With Death, Episode 3</strong><br>The final steps.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/mothership/VRDeadEpisode1.png" alt=""></div>
             <div class="col-md-3 schedule-date"><time datetime="2026-11-09">Monday 9 November</time></div>
-            <div class="col"><strong>Mothership: VR Dead, Episode 2</strong><br>The story continues.</div>
+            <div class="col"><strong>Mothership: VR Dead, Episode 1</strong><br>Cold corridors, bad decisions, and survival horror.</div>
+          </div>
+          <div class="schedule-item row g-2 align-items-center">
+            <div class="col-auto"><img class="schedule-thumb" src="images/mothership/VRDeadEpisode1.png" alt=""></div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-11-16">Monday 16 November</time></div>
+            <div class="col"><strong>Mothership: VR Dead, Episode 2</strong><br>Escaping the virtual reality.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/tor/StarOfMistEp1Screen.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-11-16">Monday 16 November</time></div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-11-23">Monday 23 November</time></div>
             <div class="col"><strong>The One Ring: The Star of the Mist, Episode 1</strong><br>The company begins its journey from the Prancing Pony.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/tor/StarOfMistEp2Screen.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-11-23">Monday 23 November</time></div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-11-30">Monday 30 November</time></div>
             <div class="col"><strong>The One Ring: The Star of the Mist, Episode 2</strong><br>The company follows the trail of the Star of the Mist.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/mothership/arrival_ep1_screen.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-11-30">Monday 30 November</time></div>
-            <div class="col"><strong>Hyperion: Arrival, Episode 1</strong><br>Another story begins at the table.</div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-12-07">Monday 7 December</time></div>
+            <div class="col"><strong>Hyperion: Arrival, Episode 1</strong><br>Aliens and artefacts in deep space.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/mothership/arrival_ep2_screen.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-12-07">Monday 7 December</time></div>
-            <div class="col"><strong>Hyperion: Arrival, Episode 2</strong><br>The journey continues.</div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-12-14">Monday 14 December</time></div>
+            <div class="col"><strong>Hyperion: Arrival, Episode 2</strong><br>The escape of sleep.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/mothership/revival_ep1_screen.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-12-14">Monday 14 December</time></div>
-            <div class="col"><strong>Hyperion: Revival, Episode 1</strong><br>A new chapter opens.</div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-12-21">Monday 21 December</time></div>
+            <div class="col"><strong>Hyperion: Revival, Episode 1</strong><br>Watery steps on a new moon.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/mothership/revival_ep2_screen.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-12-21">Monday 21 December</time></div>
-            <div class="col"><strong>Hyperion: Revival, Episode 2</strong><br>The story develops.</div>
+            <div class="col-md-3 schedule-date"><time datetime="2026-12-28">Monday 28 December</time></div>
+            <div class="col"><strong>Hyperion: Revival, Episode 2</strong><br>Escape and survival.</div>
           </div>
           <div class="schedule-item row g-2 align-items-center">
             <div class="col-auto"><img class="schedule-thumb" src="images/mothership/awakening_ep1_screen.png" alt=""></div>
-            <div class="col-md-3 schedule-date"><time datetime="2026-12-28">Monday 28 December</time></div>
-            <div class="col"><strong>Hyperion: Awakening, Episode 1</strong><br>A new live-play adventure.</div>
-          </div>
-          <div class="schedule-item row g-2 align-items-center">
-            <div class="col-auto"><img class="schedule-thumb" src="images/mothership/awakening_ep2_screen.png" alt=""></div>
             <div class="col-md-3 schedule-date"><time datetime="2027-01-04">Monday 4 January</time></div>
-            <div class="col"><strong>Hyperion: Awakening, Episode 2</strong><br>The adventure continues.</div>
+            <div class="col"><strong>Hyperion: Awakening, Episode 1</strong><br>What we leave behind.</div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="content pt-0" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="eyebrow mb-3">Audio podcast</p>
+        <h2 id="about-heading" class="section-heading">Listen to episodes as they release</h2>
+        <p class="intro">New audio recordings are added to the podcast feed and Spotify in step with the episode schedule, so you can follow each story as it unfolds.</p>
+        <p class="intro">Subscribe via the RSS icon in the header to keep up with every release.</p>
       </div>
     </section>
 
@@ -241,6 +339,61 @@
       <span>More stories are coming soon.</span>
     </div>
   </footer>
+
+  <div class="copy-toast" id="copyToast" role="status" aria-live="polite">Link copied</div>
+
+  <script>
+    const rssCopyLinks = document.querySelectorAll('.rss-copy-link');
+    const copyToast = document.getElementById('copyToast');
+
+    function showCopyToast() {
+      copyToast.classList.add('show');
+      window.clearTimeout(showCopyToast.timeoutId);
+      showCopyToast.timeoutId = window.setTimeout(() => {
+        copyToast.classList.remove('show');
+      }, 1400);
+    }
+
+    rssCopyLinks.forEach((link) => {
+      const originalLabel = link.getAttribute('aria-label') || 'Copy RSS feed URL';
+
+      link.addEventListener('click', async (event) => {
+        event.preventDefault();
+
+        const feedUrl = link.dataset.feedUrl;
+
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(feedUrl);
+          } else {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = feedUrl;
+            tempInput.setAttribute('readonly', '');
+            tempInput.style.position = 'fixed';
+            tempInput.style.opacity = '0';
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+          }
+
+          link.classList.add('copied');
+          link.setAttribute('aria-label', 'RSS feed URL copied');
+          link.title = 'RSS feed URL copied';
+          showCopyToast();
+
+          window.setTimeout(() => {
+            link.classList.remove('copied');
+            link.setAttribute('aria-label', originalLabel);
+            link.title = originalLabel;
+          }, 1400);
+        } catch (error) {
+          link.setAttribute('aria-label', 'Copy RSS feed URL failed');
+          link.title = 'Copy failed';
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>

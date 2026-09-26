@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:podcast="https://podcastindex.org/namespace/1.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>The Role Play Goblin - Audio Podcast</title>
+    <link>https://therpgoblin.co.uk</link>
+    <atom:link href="https://podcast.therpgoblin.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Tabletop roleplaying actual play from The Role Play Goblin. Horror, mystery and adventure across games like Vaesen, Mothership, The One Ring and Call of Cthulhu.</description>
+    <language>en-gb</language>
+    <copyright>© 2026 The Role Play Goblin</copyright>
+    <itunes:author>The Role Play Goblin</itunes:author>
+    <itunes:owner>
+      <itunes:name>Simon</itunes:name>
+      <itunes:email>therpgoblin@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://podcast.therpgoblin.co.uk/trpg_short_title_log_square.png"/>
+    <itunes:category text="Leisure">
+      <itunes:category text="Games"/>
+    </itunes:category>
+    <itunes:explicit>true</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <podcast:guid>43b45966-a2c2-5c87-9ca2-e9bc36dcfe00</podcast:guid>
+    <podcast:locked owner="therpgoblin@gmail.com">yes</podcast:locked>
+
+    <!-- Newest episodes go at the top, directly below this line -->
+
+    <item>
+      <title>Vaesen: Dance With Death – Part 3</title>
+      <description><![CDATA[Step into the shadows and join us for Dance with Death, our play through of Vaesen: Seasons of Mystery. Set in a haunting mythic Scandinavia, we unravel eerie folklore, chilling investigations, and the fragile line between the natural and the supernatural.
+Each episode follows our investigators as they confront strange occurrences, ancient beings, and the consequences of disturbing what should remain hidden.
+Wonderful music from: https://www.jordan-hunt.com/
+Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
+      <enclosure url="https://podcast.therpgoblin.co.uk/vaesen/vaesenDanceWithDeathEp3.mp3"
+                 length="289,406,976"
+                 type="audio/mpeg"/>
+      <guid isPermaLink="false">rpgoblin-vaesen-dance-with-death-ep3</guid>
+      <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
+      <itunes:duration>12052</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>true</itunes:explicit>
+    </item>
+
+    <item>
+      <title>Vaesen: Dance With Death – Part 2</title>
+      <description><![CDATA[Step into the shadows and join us for Dance with Death, our play through of Vaesen: Seasons of Mystery. Set in a haunting mythic Scandinavia, we unravel eerie folklore, chilling investigations, and the fragile line between the natural and the supernatural.
+Each episode follows our investigators as they confront strange occurrences, ancient beings, and the consequences of disturbing what should remain hidden.
+Wonderful music from: https://www.jordan-hunt.com/
+Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
+      <enclosure url="https://podcast.therpgoblin.co.uk/vaesen/vaesenDanceWithDeathEp2.mp3"
+                 length="225,443,840"
+                 type="audio/mpeg"/>
+      <guid isPermaLink="false">rpgoblin-vaesen-dance-with-death-ep2</guid>
+      <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
+      <itunes:duration>9368</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>true</itunes:explicit>
+    </item>
+
+    <item>
+      <title>Vaesen: Dance With Death – Part 1</title>
+      <description><![CDATA[Step into the shadows and join us for Dance with Death, our play through of Vaesen: Seasons of Mystery. Set in a haunting mythic Scandinavia, we unravel eerie folklore, chilling investigations, and the fragile line between the natural and the supernatural.
+Each episode follows our investigators as they confront strange occurrences, ancient beings, and the consequences of disturbing what should remain hidden.
+Wonderful music from: https://www.jordan-hunt.com/
+Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
+      <enclosure url="https://podcast.therpgoblin.co.uk/vaesen/vaesenDanceWithDeathEp1.mp3"
+                 length="241,172,480"
+                 type="audio/mpeg"/>
+      <guid isPermaLink="false">rpgoblin-vaesen-dance-with-death-ep1</guid>
+      <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
+      <itunes:duration>9382</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>true</itunes:explicit>
+    </item>
+
+    <item>
+      <title>Vaesen: Doubles – Part 3</title>
+      <description><![CDATA[The truth behind the reflections can no longer be denied—and it's far more terrifying than anyone imagined. As Uppsala celebrates in fireworks, our investigators face their final reckoning with the forces of Nordic folklore.
+Secrets are revealed, alliances are tested, and the line between the real and the reflected grows impossibly thin. Will our heroes survive the night, or will the village be lost to the myths that spawned it?
+The conclusion to Doubles brings suspense, sacrifice, and supernatural horror to a head. Subscribe to follow our journey into the dark heart of myth and legend.
+The Double module: https://www.drivethrurpg.com/en/product/402994/the-double-vaesen-mystery
+Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
+      <enclosure url="https://podcast.therpgoblin.co.uk/vaesen/Doubles-Episode3.mp3"
+                 length="211,812,352"
+                 type="audio/mpeg"/>
+      <guid isPermaLink="false">rpgoblin-vaesen-doubles-ep3</guid>
+      <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
+      <itunes:duration>8784</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>true</itunes:explicit>
+    </item>
+
+    <item>
+      <title>Vaesen: Doubles – Part 2</title>
+      <description><![CDATA[The mirrors have multiplied, and Frederick is unravelling. Our investigators dig deeper into the folklore behind the doubles—only to find that some townsfolk may not be who they claim to be at all.
+Trust becomes a luxury no one can afford. With whispers of old Nordic curses and the growing dread that the doubles are closer than anyone realizes, our heroes must decide who to believe before it's too late.
+The threads of myth and reality blur further in this second chapter of suspense and supernatural horror. Subscribe to follow our journey into the dark heart of myth and legend.
+The Double module: https://www.drivethrurpg.com/en/product/402994/the-double-vaesen-mystery
+Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
+      <enclosure url="https://podcast.therpgoblin.co.uk/vaesen/Doubles-Episode2.mp3"
+                 length="232,783,872"
+                 type="audio/mpeg"/>
+      <guid isPermaLink="false">rpgoblin-vaesen-doubles-ep2</guid>
+      <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
+      <itunes:duration>9659</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>true</itunes:explicit>
+    </item>
+
+    <item>
+      <title>Vaesen: Doubles – Part 1</title>
+      <description><![CDATA[Step into the eerie world of Nordic horror with Doubles, a Vaesen RPG one-shot. The peaceful façade of a quiet village is shattered when identical strangers appear—unwelcome mirrors of the townsfolk. Are they malevolent spirits, Vaesen in disguise, or something far worse?
+In this chilling tale of mistrust, folklore, and survival, our investigators must unravel the mystery before the village tears itself apart... or worse.
+Prepare for suspense, supernatural intrigue, and the haunting echoes of the unknown. Subscribe to follow our journey into the dark heart of myth and legend.
+The Double module: https://www.drivethrurpg.com/en/product/402994/the-double-vaesen-mystery
+Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
+      <enclosure url="https://podcast.therpgoblin.co.uk/vaesen/Doubles-Episode1.mp3"
+                 length="257,949,696"
+                 type="audio/mpeg"/>
+      <guid isPermaLink="false">rpgoblin-vaesen-doubles-ep1</guid>
+      <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
+      <itunes:duration>10736</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>true</itunes:explicit>
+    </item>
+
+  </channel>
+</rss>

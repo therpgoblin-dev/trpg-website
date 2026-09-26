@@ -47,9 +47,34 @@ main { padding: 5rem 0; }
 .cast-photo { width: 68px; height: 68px; margin: 0 auto .5rem; display: block; object-fit: cover; }
 .cast-placeholder { display: grid; place-items: center; color: white; background: var(--pink); font: 1.35rem 'Lilita One', sans-serif; }
 .cast-role { display: block; color: var(--pink); font-size: .75rem; font-weight: 700; }
-.episode-card { height: 100%; overflow: hidden; background: white; border: 2px solid var(--ink); }
+.episode-card { position: relative; height: 100%; overflow: hidden; background: white; border: 2px solid var(--ink); }
+.episode-thumb { position: relative; }
 .episode-art { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; background: var(--ink); }
 .episode-art-placeholder { display: grid; place-items: center; padding: 1rem; color: white; text-align: center; font-weight: 700; }
+.video-badge {
+  position: absolute;
+  right: .85rem;
+  bottom: .85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .45rem .75rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--yellow);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: 3px 3px 0 rgba(35, 28, 42, .12);
+  font-family: 'Lilita One', sans-serif;
+  font-size: .78rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.video-badge img {
+  height: 22px;
+  display: block;
+}
 .episode-body { padding: 1.25rem; }
 .episode-body h2 { margin: 0 0 .35rem; font-size: 1.6rem; }
 .coming-soon { padding: 2rem; color: white; background: var(--ink); }
