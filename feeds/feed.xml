@@ -21,7 +21,7 @@
       <itunes:category text="Games"/>
     </itunes:category>
     <itunes:explicit>true</itunes:explicit>
-    <itunes:type>episodic</itunes:type>
+    <itunes:type>serial</itunes:type>
     <podcast:guid>43b45966-a2c2-5c87-9ca2-e9bc36dcfe00</podcast:guid>
     <podcast:locked owner="therpgoblin@gmail.com">yes</podcast:locked>
 
@@ -39,6 +39,7 @@ Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
       <guid isPermaLink="false">rpgoblin-vaesen-dance-with-death-ep3</guid>
       <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
       <itunes:duration>12052</itunes:duration>
+      <itunes:season>2</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>true</itunes:explicit>
     </item>
@@ -55,6 +56,7 @@ Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
       <guid isPermaLink="false">rpgoblin-vaesen-dance-with-death-ep2</guid>
       <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
       <itunes:duration>9368</itunes:duration>
+      <itunes:season>2</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>true</itunes:explicit>
     </item>
@@ -71,6 +73,7 @@ Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
       <guid isPermaLink="false">rpgoblin-vaesen-dance-with-death-ep1</guid>
       <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
       <itunes:duration>9382</itunes:duration>
+      <itunes:season>2</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>true</itunes:explicit>
     </item>
@@ -88,6 +91,7 @@ Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
       <guid isPermaLink="false">rpgoblin-vaesen-doubles-ep3</guid>
       <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
       <itunes:duration>8784</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>true</itunes:explicit>
     </item>
@@ -105,6 +109,7 @@ Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
       <guid isPermaLink="false">rpgoblin-vaesen-doubles-ep2</guid>
       <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
       <itunes:duration>9659</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>true</itunes:explicit>
     </item>
@@ -122,6 +127,7 @@ Vaesen RPG: https://freeleaguepublishing.com/games/vaesen/]]></description>
       <guid isPermaLink="false">rpgoblin-vaesen-doubles-ep1</guid>
       <pubDate>Fri, 25 Sep 2026 18:00:00 +0100</pubDate>
       <itunes:duration>10736</itunes:duration>
+      <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>true</itunes:explicit>
     </item>
