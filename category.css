@@ -75,6 +75,7 @@ main { padding: 5rem 0; }
   height: 22px;
   display: block;
 }
+.coming-soon-badge { background: var(--ink); color: var(--yellow); }
 .episode-body { padding: 1.25rem; }
 .episode-body h2 { margin: 0 0 .35rem; font-size: 1.6rem; }
 .coming-soon { padding: 2rem; color: white; background: var(--ink); }
